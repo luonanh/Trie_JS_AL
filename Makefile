@@ -6,8 +6,8 @@ SUBMITNAME=project.zip
 
 all:$(BIN)
 
-main:$(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(BIN)
+$(BIN):$(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $@
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
