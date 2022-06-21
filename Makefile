@@ -13,7 +13,7 @@ main:$(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) -r main *.o *.dSYM $(SUBMITNAME)
+	$(RM) -r $(BIN) *.o *.dSYM $(SUBMITNAME)
 
 submit:
 	$(RM) $(SUBMITNAME)
